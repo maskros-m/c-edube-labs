@@ -51,11 +51,11 @@ int main() {
     printf("%*.*d", 4, 0, r);
   
   for (r = 0; r < tabsize; r++) {
+    printf("\n");
     printf("%*.*d", 4, 0, r+1);
     for (c = 0; c < tabsize; c++) {
       printf("%*.%d", 4, 0, multab[r][c]);
     }
-    printf("\n");
   }
   
   /* Deallocating memory */
